@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Role Playing Currency</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div><h1>Role Playing Currency Coverter</h1></div> <br>
+    <div>
+        <input type="number" id="text"/>
+            <form>
+                <select name="units" class="units" id="drop1">
+                    <option value="copper">Copper</option>
+                    <option value="silver">Silver</option>
+                    <option value="electrum">Electrum</option>
+                    <option value="gold">Gold</option>
+                    <option value="platinum">Platinum</option>
+                </select>
+            </form>
+    </div>
+    <button id="enter" onClick="Unitcovert()" onkeypress="Unitcovert()" class="btn btn-success">Calculate</button> <br>
+    <div>
+        <input type="text" id="ans" placeholder="0" readonly="yes"/>
+            <form>
+                <select name="units" class="units" id="drop2">
+                    <option value="copper">Copper</option>
+                    <option value="silver">Silver</option>
+                    <option value="electrum">Electrum</option>
+                    <option value="gold">Gold</option>
+                    <option value="platinum">Platinum</option>
+                </select>
+            </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
